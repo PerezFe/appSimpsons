@@ -5,8 +5,9 @@ import Cardhomero from './components/Cardhomero';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <React.StrictMode >
     <App />
+    <Cardhomero/>
   </React.StrictMode>
 );
 

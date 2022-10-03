@@ -1,15 +1,28 @@
 import React from 'react';
 import homero from '../assets/Img/Homero.png'
+import { Card, Col, Row } from 'react-bootstrap';
 
 const Cardhomero = () => {
     return (
-        <div className="App square border rounded m-5 d-flex bg-light">
-            <img src={homero} width="50%"/>
-            <div className='cartaHomero'>
-            <h3 className='my-2'>Homer Simpson</h3>
-            <p className='my-3'>Facts are meaningléss. You could use facts to prove anything that´s even remotely true</p>
-            </div>
-        </div>
+        <Card className='m-5'>
+            <Card.Body>
+         <Row>
+            <Col md={4}>
+              <div className='col-4 w-100'>
+                <img src={homero} alt="homero simpson"/>
+              </div>
+            </Col>
+            <Col md={8}>
+            <Card.Title>
+                    <h3 className='my-2'>Homer Simpson</h3>
+            </Card.Title>
+                <Card.Text>
+                    Facts are meaningléss. You could use facts to prove anything that´s even remotely true.
+                </Card.Text>
+            </Col>
+        </Row>
+            </Card.Body>
+        </Card>
     );
 };
 

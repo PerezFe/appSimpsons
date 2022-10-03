@@ -1,20 +1,23 @@
 import simpsons from './assets/Img/Simpsons.png'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Button from 'react-bootstrap/Button';
-import Cardhomero from './components/Cardhomero';
+import { Container } from 'react-bootstrap';
+import stilo from "./style.css"
 
 
 
 function App() {
   return (
     
-    <div className="App square border border-warning rounded " style={{ background: 'linear-gradient(to right, rgba(102, 126, 234, 0.5), rgba(118, 75, 162, 0.5))'}}>
-      <img src={simpsons}/>
+    <Container style={stilo}>
+    <div className="text-center">
+      <img src={simpsons} width="100%" alt='homero'/>
       <div className='text-center my-5'>
-      <Button variant="warning">Obtener frase</Button>{' '}
+      <Button variant="warning">Obtener frase</Button>
       </div>
-      <Cardhomero/>
+      
     </div>
+    </Container>
   );
 }
 
