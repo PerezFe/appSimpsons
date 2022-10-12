@@ -1,4 +1,3 @@
-import React from 'react';
 import homero from '../assets/Img/Homero.png'
 import { Card, Col, Row } from 'react-bootstrap';
 
@@ -8,9 +7,7 @@ const Cardhomero = () => {
             <Card.Body>
          <Row>
             <Col md={4}>
-              <div className='col-4 w-100'>
                 <img src={homero} alt="homero simpson"/>
-              </div>
             </Col>
             <Col md={8}>
             <Card.Title>
