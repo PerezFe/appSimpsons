@@ -36,7 +36,7 @@ function App() {
     <div className="text-center">
       <img src={simpsons} width="100%" alt='homero'/>
       <div className='text-center my-5'>
-      <Button variant="warning">Obtener frase</Button>
+      <Button variant="warning" onClick={consultarAPI}>Obtener frase</Button>
       </div>
       
     </div>
